@@ -56,7 +56,7 @@ namespace pract11
                                             int dayValue = int.Parse(Day.Text);
                                             if (dayValue > 0 && (((monthValue == 1 || monthValue == 3 || monthValue == 5 || monthValue == 7 || monthValue == 8 || monthValue == 10  || monthValue == 11) && dayValue <= 31) ||
                                          
-                                                ((monthValue == 4 || monthValue == 6 || monthValue == 9 || monthValue == 11) && dayValue <= 30) ||
+                                                ((monthValue == 4 || monthValue == 6 || monthValue == 9 || monthValue == 11) && dayValue <= 30) ||   ((monthValue == 2 && dayValue <= 29 && yearValue % 4 == 0) ||
                                               ((monthValue == 2 && dayValue <= 28 && yearValue % 4 != 0) )))
                                             {
                                                 new_date = new Date(Convert.ToInt32(Day.Text), Convert.ToInt32(Month.Text), Convert.ToInt32(Year.Text));
